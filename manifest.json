@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "WikiLearn"
+   },
+   "content_scripts": [ {
+      "js": [ "script.js" ],
+      "matches": [ "http://*.wikipedia.org/*", "https://*.wikipedia.org/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Learn while browsing Wikipedia",
+   "homepage_url": "http://wikimine.org",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1fh9rHjDiu0K2x6s0mWt3wJVEV0lN3YcQD9jdiS976jM1vxNgX3bfajizIyZG9C+9zP2LfgeZgIw+ON9xcAOcWPkJQn+x+qIClhcEDjT0gZ6T8tj2dluZw/dKyErkSHZLw6W96YpBH4TzyVtQE/xGS5BBOvworh+l94qk5BzbS+qUgLCm4EAI+g2ps7Y6D/P0n68+q8BZwjhyKAnDn8+MN1E/vZ2ENqbksS5+WQGUQ+laRckavpdGyTJ4una/CtnNMhy8iHOGhj32xKskbjWb+m8VciNxTFjV3wuSjxZpSVdmteD3cOtATWsP0CdL1Q8/tMzhcCMCO//bIlT8/uAQIDAQAB",
+   "manifest_version": 2,
+   "name": "WikiMine",
+   "options_page": "options.html",
+   "permissions": [ "https://graph.facebook.com/*", "http://*.wikipedia.org/*", "https://*.wikipedia.org/*", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.7"
+}
