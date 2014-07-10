@@ -4,7 +4,7 @@
   var DOMAIN = 'http://wikimine.org';
 
   var link = DOMAIN + '/api/save?';
-  var link_dev = 'http://localhost:8080/save?';
+  var link_dev = 'http://localhost:8080/api/save?';
 
   var redirect = 'https://www.facebook.com/connect/login_success.html',
       id  = '205795012893672',
@@ -110,7 +110,8 @@
           type: 'save',
           start: request.start,
           totalIn: request.totalIn,
-          title: request.title
+          title: request.title,
+          referrer: request.referrer
         };
 
         console.log('Saving', data);

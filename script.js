@@ -80,6 +80,8 @@
       totalIn  : totalIn,
       totalOut : totalOut,
 
+      referrer: document.referrer,
+
       hashJump : hashJump
     };
 
